@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+header {
+  transition: all 0.3s;
+}
+header .container-fluid {
+  padding: 0px;
+}
+header .nav-item:hover {
+  color: #B1E6DE;
+}
+header .nav-item .nav-link {
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+header.scrolled {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 5px 20px -10px #3e3e3e;
+}
+
+.btn {
+  background: transparent;
+  color: #3e3e3e;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.35s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 180px;
+}
+.btn svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn rect {
+  fill: none;
+  stroke: #3e3e3e;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+.btn:hover {
+  background: transparent;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #3e3e3e;
+}
+.btn:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 18;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+footer {
+  font-size: 14px;
+}
+footer .site-logo img {
+  width: 100px;
+}
+footer a {
+  color: #3e3e3e;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
