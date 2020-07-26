@@ -7,6 +7,10 @@
   letter-spacing: 1px;
 }
 
+main {
+  overflow: hidden;
+}
+
 header {
   transition: all 0.3s;
 }
